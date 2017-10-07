@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - echo files `ls`
       - aws cloudformation package --template-file deploy.yaml --s3-bucket meetup-stacks
                                    --output-template-file NewSamTemplate.yaml
 artifacts:
