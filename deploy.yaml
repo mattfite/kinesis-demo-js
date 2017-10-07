@@ -4,9 +4,9 @@ Resources:
   ProcessKinesisRecords:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: demo.ProcessKinesisEvents::handleRequest
-      Runtime: java8
-      CodeUri: target/lambda-java-example-1.0-SNAPSHOT.jar
+      Handler: ProcessKinesisRecords.handler
+      Runtime: nodejs6.10
+      CodeUri: ./
       Policies: AWSLambdaKinesisExecutionRole
       Events:
         Stream:
