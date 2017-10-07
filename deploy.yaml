@@ -6,7 +6,6 @@ Resources:
     Properties:
       Handler: ProcessKinesisRecords.handler
       Runtime: nodejs6.10
-      CodeUri: ./
       Policies: AWSLambdaKinesisExecutionRole
       Events:
         Stream:
