@@ -1,7 +1,7 @@
 #!/bin/sh
 
 stream=$(aws cloudformation describe-stacks \
-    --stack-name kinesis-demo-js \
+    --stack-name KinesisBetaJsStack \
     --query 'Stacks[0].Outputs[?OutputKey==`Stream`].OutputValue' \
     --output text)
 
