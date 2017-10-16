@@ -5,7 +5,7 @@ aws cloudformation package \
 	--s3-bucket meetup-stacks
 
 aws cloudformation deploy \
-	--template-file /Users/matt/Projects/lambda/kinesis/serverless-output.yaml \
+	--template-file /Users/matt/Projects/lambda/kinesis-demo-js/serverless-output.yaml \
 	--stack-name kinesis-demo-js \
 	--capabilities CAPABILITY_IAM
 
